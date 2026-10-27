@@ -22,8 +22,8 @@ penguins |>
   ggplot(mapping = aes(x = species, y = bill_length_mm, fill = species)) +
   geom_boxplot() +
   labs(
-    title = "Distribution of Bill Lengths(mm) across Penguin Species",
+    title = "Distribution of Bill Length (mm) across Penguin Species",
     x = "Penguin Species",
-    y = "Bill Length (mm)"
+    y = "Bill Length (mm)" 
   )
 ```
