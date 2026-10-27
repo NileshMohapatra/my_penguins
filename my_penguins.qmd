@@ -20,5 +20,10 @@ fivenum(penguins$bill_length_mm)
 penguins |> 
   group_by(species) |>
   ggplot(mapping = aes(x = species, y = bill_length_mm, fill = species)) +
-  geom_boxplot()
+  geom_boxplot() +
+  labs(
+    title = "Distribution of Bill Lengths(mm) across Penguin Species",
+    x = "Penguin Species",
+    y = "Bill Length (mm)"
+  )
 ```
