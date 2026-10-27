@@ -14,9 +14,4 @@ library(palmerpenguins)
 ```{r}
 glimpse(penguins)
 fivenum(penguins$bill_length_mm)
-
-penguins |> 
-  group_by(species) |>
-  ggplot(mapping = aes(x = species, y = bill_length_mm, fill = species)) +
-  geom_boxplot()
 ```
